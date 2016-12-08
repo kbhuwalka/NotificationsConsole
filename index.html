@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Starter Template - Materialize</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <div class="navbar-fixed">
+    <nav class="red darken-3" role="navigation">
+      <div class="nav-wrapper">
+        <a id="logo-container" href="#" class="brand-logo left">Notifications</a>
+        <ul class="right">
+          <li><i class="material-icons">delete</i></li>
+          <li><a class='dropdown-button' href='#' data-alignment="right" data-beloworigin="true" data-activates='overflow'><i class="material-icons">more_vert</i></a></li>
+        </ul>
+        <ul id='overflow' class='dropdown-content'>
+          <li><a href="#!" class="grey-text text-darken-3">Logout</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <main class="valign-wrapper red darken-3">
+    <div class="valign container">
+      <div class="row">
+        <div class="col s12 m8 offset-m2">
+          <div id="notification-holder" class="card-panel white grey-text text-darken-3">
+
+            <ul class="collapsible notification-list" data-collapsible="accordion">
+              <li>
+                <div class="collapsible-header">
+                  <b>First</b>
+                  <div id="action-icons" class="right">
+                    <i class="material-icons">mode_edit</i>
+                    <i class="material-icons">delete</i>
+                  </div>
+                </div>
+                <div class="collapsible-body">
+                  Lorem ipsum dolor sit amet.
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header">
+                  <b>Second</b>
+                  <div id="action-icons" class="right">
+                    <i class="material-icons">mode_edit</i>
+                    <i class="material-icons">delete</i>
+                  </div>
+                </div>
+                <div class="collapsible-body">
+                  <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div class="fixed-action-btn">
+    <a href="#create-modal" class="btn-floating btn-large orange">
+      <i class="large material-icons">add</i>
+    </a>
+  </div>
+  <!-- Modal Structure -->
+  <div id="create-modal" class="modal">
+    <div class="modal-content">
+      <h4>New Notification</h4>
+      <form>
+        <b><input type="text" placeholder="Title"></b>
+        <input type="text" placeholder="Description...">
+      </form>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-red red-text btn-flat">Create</a>
+      <a href="#!" class=" modal-action modal-close waves-effect waves-red red-text btn-flat">Cancel</a>
+    </div>
+  </div>
+  <footer class="page-footer red darken-3">
+    <div class="container">
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="orange-text text-lighten-3">Kunal</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
